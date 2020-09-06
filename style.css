@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,700;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,700;1,500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -75,6 +75,8 @@ section {
 
 nav {
   z-index: 5;
+  position: sticky;
+  position: -webkit-sticky;
   background: #fff;
   padding: 5px 0;
   height: 6rem;
@@ -102,7 +104,7 @@ nav container {
 #Hero {
   padding: 25px 0;
   background: #fff;
-  height: calc(50vh - 6rem);
+  height: calc(100vh - 17rem);
 }
 
 #Hero container {
@@ -182,6 +184,17 @@ button.active {
           box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
 }
 
+#Card a {
+  display: block;
+  line-height: 1.5;
+  font: 700 1.6rem "Barlow", sans-serif;
+  color: #555;
+}
+
+#Card a:hover {
+  text-decoration: underline;
+}
+
 .accordian {
   cursor: pointer;
 }
@@ -208,7 +221,29 @@ button.active {
 }
 
 .footer {
-  height: 45vh;
+  background: #fff;
+  font: 700 1.4rem "Barlow", sans-serif;
+  padding: 10px 0;
+}
+
+.footer container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 2rem;
+}
+
+.footer a {
+  color: var(--accent);
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 footer {
@@ -228,7 +263,6 @@ footer container {
           justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
-  line-height: 100%;
 }
 
 footer a {
