@@ -7,7 +7,10 @@
       HackResource - World's First Curation Platform for Learning Resources
     </title>
     <link rel="stylesheet" href="style.css" />
-    <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+    <script
+      async
+      src="//cdn.jsdelivr.net/github-cards/latest/widget.js"
+    ></script>
     <!-- <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -20,6 +23,7 @@
     ></script>
   </head>
   <body>
+    <!-- NavBar -->
     <nav>
       <container>
         <a href="/index.html"
@@ -28,7 +32,172 @@
         World's First Curation Platform for Learning Resources
       </container>
     </nav>
-    <div class="SubjectCard"></div>
+    <!-- Hero -->
+    <div id="Hero">
+      <container
+        ><h1>
+          What would you like <br />
+          to Learn?
+        </h1>
+        <img src="knowledge.svg" alt="" height="150px" srcset="" />
+      </container>
+    </div>
+    <!-- Tab links -->
+    <container>
+      <div class="tab">
+        <button class="tablinks" onclick="openTopics(event, 'Web')">
+          Web Development
+        </button>
+        <button class="tablinks" onclick="openTopics(event, 'Mobile')">
+          Mobile Development
+        </button>
+        <button class="tablinks" onclick="openTopics(event, 'Basics')">
+          Basics
+        </button>
+      </div>
+
+      <!-- Tab content -->
+      <!-- Web  -->
+      <div id="Web" class="tabcontent">
+        <!-- Web -->
+        <div class="Web">
+          <div id="Card">
+            <div class="accordion">
+              <div class="cardHead">
+                <h5>React</h5>
+                <span class="fab fa-react"></span>
+              </div>
+            </div>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div id="Card">
+            <div class="accordion">
+              <div class="cardHead">
+                <h5>Angular</h5>
+                <span class="fab fa-angular"></span>
+              </div>
+            </div>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div id="Card">
+            <div class="accordion">
+              <div class="cardHead">
+                <h5>JavaScript</h5>
+                <span class="fab fa-js"></span>
+              </div>
+            </div>
+            <div class="panel">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile  -->
+      <div id="Mobile" class="tabcontent">
+        <div id="Card">
+          <div class="accordion">
+            <div class="cardHead">
+              <h5>Android Development</h5>
+              <span class="fab fa-android"></span>
+            </div>
+          </div>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div id="Card">
+          <div class="accordion">
+            <div class="cardHead">
+              <h5>iOS Development</h5>
+              <span class="fab fa-apple"></span>
+            </div>
+          </div>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Basics  -->
+      <div id="Basics" class="tabcontent">
+        <div id="Card">
+          <div class="accordion">
+            <div class="cardHead">
+              <h5>Version Control (Git)</h5>
+              <span class="fab fa-git"></span>
+            </div>
+          </div>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div id="Card">
+          <div class="accordion">
+            <div class="cardHead">
+              <h5>Linux</h5>
+              <span class="fab fa-linux"></span>
+            </div>
+          </div>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+        <div id="Card">
+          <div class="accordion">
+            <div class="cardHead">
+              <h5>VS Code</h5>
+              <span class="fa fa-code"></span>
+            </div>
+          </div>
+          <div class="panel">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </container>
     <div class="footer">
       <container>
         <div
@@ -47,82 +216,6 @@
         ></div>
       </container>
     </div>
-    <div id="Hero">
-      <container
-        ><h1>
-          What would you like <br />
-          to Learn?
-        </h1>
-        <img src="knowledge.svg" alt="" height="150px" srcset="" />
-      </container>
-    </div>
-
-    <section id="Resources">
-      <div id="Card">
-        <div class="accordion">
-          <div class="cardHead">
-            <h2>React</h2>
-            <span class="fab fa-react"></span>
-          </div>
-        </div>
-        <div class="panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-      <div id="Card">
-        <div class="accordion">
-          <div class="cardHead">
-            <h2>React</h2>
-            <span class="fab fa-react"></span>
-          </div>
-        </div>
-        <div class="panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-      <div id="Card">
-        <div class="accordion">
-          <div class="cardHead">
-            <h2>React</h2>
-            <span class="fab fa-react"></span>
-          </div>
-        </div>
-        <div class="panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-      <div id="Card">
-        <div class="accordion">
-          <div class="cardHead">
-            <h2>React</h2>
-            <span class="fab fa-react"></span>
-          </div>
-        </div>
-        <div class="panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </div>
-      </div>
-    </section>
     <footer>
       <container>
         <div><a href="">GitHub</a></div>

@@ -4,8 +4,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
   --accent: #20b2aa;
   --light: #fafafa;
   --dark: #777;
@@ -18,7 +16,7 @@ html {
 
 body {
   font-family: "Barlow", sans-serif;
-  font-size: 18px;
+  font-size: 24px;
   color: #111;
   background: #fcfcfc;
   line-height: 1.25;
@@ -29,10 +27,6 @@ h2,
 h3,
 h4 {
   font-family: "Barlow", sans-serif;
-}
-
-h3 {
-  font-weight: 500;
 }
 
 p {
@@ -123,34 +117,59 @@ nav container {
           align-items: center;
 }
 
-#Resources {
+.tab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.tab button {
+  background-color: #fff;
+  float: left;
+  cursor: pointer;
+  margin: 1.5rem;
+  padding: 1rem 1.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font: 700 1.6rem "Barlow", sans-serif;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.05);
+}
+
+.tab button:hover {
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+}
+
+button.active {
+  color: var(--accent);
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
 }
 
 #Card {
-  margin: 2rem;
-  padding: 2rem 3rem;
-  width: 45rem;
-  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 1.5rem 3rem;
+  width: 75rem;
+  min-width: 20rem;
   background-color: #fff;
   border-radius: 2rem;
-  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.05);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-#Card h2 {
+#Card h5 {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -181,6 +200,7 @@ nav container {
 
 .panel {
   display: none;
+  margin-top: 1rem;
   padding: 1rem;
   background-color: #fafafa;
   overflow: hidden;
@@ -188,7 +208,7 @@ nav container {
 }
 
 .footer {
-  height: 50%;
+  height: 45vh;
 }
 
 footer {
@@ -238,5 +258,21 @@ footer #copyright {
 
 .fa-angular {
   color: #da0031;
+}
+
+.fa-js {
+  color: #f2da1d;
+}
+
+.fa-android {
+  color: #76bf58;
+}
+
+.fa-git {
+  color: #ed5034;
+}
+
+.fa-code {
+  color: #0377ce;
 }
 /*# sourceMappingURL=style.css.map */

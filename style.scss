@@ -6,7 +6,6 @@ $font: "Barlow", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.2s ease-in-out;
   --accent: #20b2aa;
   --light: #fafafa;
   --dark: #777;
@@ -17,7 +16,7 @@ html {
 }
 body {
   font-family: $font;
-  font-size: 18px;
+  font-size: 24px;
   color: #111;
   background: #fcfcfc;
   line-height: 1.25;
@@ -27,9 +26,6 @@ h2,
 h3,
 h4 {
   font-family: $font;
-}
-h3 {
-  font-weight: 500;
 }
 p {
   font-size: 1.6rem;
@@ -91,24 +87,46 @@ nav {
   background: #fff;
   height: calc(50vh - 6rem);
 }
-#Resources {
+// Tab
+.tab {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  overflow: hidden;
+  button {
+    background-color: #fff;
+    float: left;
+    cursor: pointer;
+    margin: 1.5rem;
+    padding: 1rem 1.5rem;
+    transition: 0.3s;
+    font: 700 1.6rem $font;
+    border-radius: 3rem;
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.05);
+    &:hover {
+      box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+button.active {
+  color: var(--accent);
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
 }
 #Card {
-  h2 {
+  h5 {
     cursor: pointer;
     user-select: none;
   }
-  margin: 2rem;
-  padding: 2rem 3rem;
-  width: 45rem;
-  max-width: 50rem;
+  margin: 2rem auto;
+  padding: 1.5rem 3rem;
+  width: 75rem;
+  min-width: 20rem;
   background-color: #fff;
   border-radius: 2rem;
-  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.05);
   transition: all 0.4s ease-in-out;
   &:hover {
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
@@ -124,6 +142,7 @@ nav {
 }
 .panel {
   display: none;
+  margin-top: 1rem;
   padding: 1rem;
   background-color: #fafafa;
   overflow: hidden;
@@ -131,7 +150,7 @@ nav {
 }
 
 .footer {
-  height: 50%;
+  height: 45vh;
 }
 footer {
   container {
@@ -169,4 +188,16 @@ footer {
 }
 .fa-angular {
   color: #da0031;
+}
+.fa-js {
+  color: #f2da1d;
+}
+.fa-android {
+  color: #76bf58;
+}
+.fa-git {
+  color: #ed5034;
+}
+.fa-code {
+  color: #0377ce;
 }
