@@ -123,6 +123,70 @@ nav container {
           align-items: center;
 }
 
+#Resources {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#Card {
+  margin: 2rem;
+  padding: 2rem 3rem;
+  width: 45rem;
+  max-width: 50rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#Card h2 {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#Card:hover {
+  -webkit-box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.accordian {
+  cursor: pointer;
+}
+
+.cardHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.panel {
+  display: none;
+  padding: 1rem;
+  background-color: #fafafa;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 .footer {
   height: 50%;
 }
@@ -160,5 +224,19 @@ footer a:hover {
 footer #copyright {
   font: 700 1.4rem "Barlow", sans-serif;
   color: #fff;
+}
+
+.fab {
+  color: #111;
+  font-size: 3.2rem;
+  padding: 0;
+}
+
+.fa-react {
+  color: #62dafc;
+}
+
+.fa-angular {
+  color: #da0031;
 }
 /*# sourceMappingURL=style.css.map */

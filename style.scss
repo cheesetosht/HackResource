@@ -66,7 +66,6 @@ section {
   width: 100%;
   max-width: 1240px;
 }
-
 nav {
   z-index: 5;
   background: #fff;
@@ -92,6 +91,45 @@ nav {
   background: #fff;
   height: calc(50vh - 6rem);
 }
+#Resources {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#Card {
+  h2 {
+    cursor: pointer;
+    user-select: none;
+  }
+  margin: 2rem;
+  padding: 2rem 3rem;
+  width: 45rem;
+  max-width: 50rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  }
+}
+.accordian {
+  cursor: pointer;
+}
+.cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.panel {
+  display: none;
+  padding: 1rem;
+  background-color: #fafafa;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
 .footer {
   height: 50%;
 }
@@ -119,4 +157,16 @@ footer {
     font: 700 1.4rem $font;
     color: #fff;
   }
+}
+
+.fab {
+  color: #111;
+  font-size: 3.2rem;
+  padding: 0;
+}
+.fa-react {
+  color: #62dafc;
+}
+.fa-angular {
+  color: #da0031;
 }
