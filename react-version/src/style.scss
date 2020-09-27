@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;0,700;1,500&display=swap");
+
+$font: "Barlow", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --accent: #20b2aa;
+  --light: #fafafa;
+  --dark: #777;
+}
+html {
+  font-size: 10px;
+  text-rendering: optimizeLegibility;
+}
+body {
+  font-family: $font;
+  font-size: 24px;
+  color: #111;
+  background: #fcfcfc;
+  line-height: 1.25;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font;
+}
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #888;
+}
+a {
+  text-emphasis: none;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    text-emphasis: none;
+  }
+}
+ul {
+  list-style: none;
+}
+button {
+  border: none;
+}
+container {
+  display: block;
+  margin: 0 auto;
+  padding: 0 5%;
+  width: 100%;
+  height: 100%;
+  max-width: 1240px;
+  background: transparent;
+}
+section {
+  display: block;
+  margin: 0 auto;
+  padding: 8rem 5%;
+  width: 100%;
+  max-width: 1240px;
+}
+nav {
+  z-index: 5;
+  position: sticky;
+  position: -webkit-sticky;
+  background: #fff;
+  padding: 5px 0;
+  container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  height: 6rem;
+  width: 100%;
+  color: #777;
+  font: italic 500 1.8rem $font;
+}
+#Hero {
+  container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  padding: 25px 0;
+  background: #fff;
+  height: calc(100vh - 17rem);
+}
+// Tab
+.tab {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  button {
+    background-color: #fff;
+    float: left;
+    cursor: pointer;
+    margin: 1.5rem;
+    padding: 1rem 1.5rem;
+    transition: 0.3s;
+    font: 700 1.6rem $font;
+    border-radius: 3rem;
+    box-shadow: 0 3px 25px rgba(0, 0, 0, 0.05);
+    &:hover {
+      box-shadow: 0 3px 25px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+button.active {
+  color: var(--accent);
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+#Card {
+  h5 {
+    cursor: pointer;
+    user-select: none;
+  }
+  margin: 2rem auto;
+  padding: 1.5rem 3rem;
+  width: 75rem;
+  min-width: 20rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  }
+  a {
+    display: block;
+    line-height: 1.5;
+    font: 700 1.6rem $font;
+    color: #555;
+    &:hover {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+  }
+}
+.accordian {
+  cursor: pointer;
+}
+.cardHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.panel {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #fafafa;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.footer {
+  container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 2rem;
+  }
+  background: #fff;
+  font: 700 1.4rem $font;
+  padding: 10px 0;
+
+  a {
+    color: var(--accent);
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+footer {
+  container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  width: 100%;
+  height: 4rem;
+  bottom: 0;
+  padding: 10px 0;
+  background: var(--accent);
+  a {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #fff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  #copyright {
+    font: 700 1.4rem $font;
+    color: #fff;
+  }
+}
+
+.fab {
+  color: #111;
+  font-size: 3.2rem;
+  padding: 0;
+}
+.fa-react {
+  color: #62dafc;
+}
+.fa-angular {
+  color: #da0031;
+}
+.fa-js {
+  color: #f2da1d;
+}
+.fa-android {
+  color: #76bf58;
+}
+.fa-git {
+  color: #ed5034;
+}
+.fa-code {
+  color: #0377ce;
+}
