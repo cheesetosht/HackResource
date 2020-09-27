@@ -1,4 +1,5 @@
 import React from "react";
+import knowledge from "../knowledge.svg";
 
 export default function Hero() {
   return (
@@ -9,7 +10,7 @@ export default function Hero() {
           What would you like <br />
           to Learn?
         </h1>
-        <img src="knowledge.svg" alt="" height="150px" srcset="" />
+        <img src={knowledge} alt="" height="150px" srcset="" />
       </container>
     </div>
   );

@@ -113,7 +113,6 @@ button.active {
   color: var(--accent);
 }
 .tabcontent {
-  display: none;
   padding: 6px 12px;
   border-top: none;
 }
@@ -159,6 +158,9 @@ button.active {
   background-color: #fafafa;
   overflow: hidden;
   border-radius: 10px;
+}
+.open {
+  display: block;
 }
 .footer {
   container {

@@ -1,0 +1,118 @@
+{
+  "web": [
+    {
+      "subtopic": "React",
+      "links": [
+        {
+          "name": "React Tutorial for Beginners by Mosh Hamedani - Youtube",
+          "url": "https://www.youtube.com/watch?v=Ke90Tje7VS0"
+        },
+        {
+          "name": "React Tutorial For Beginners by Dev Ed - Youtube",
+          "url": "https://www.youtube.com/watch?v=dGcsHMXbSOA"
+        },
+        {
+          "name": "React Router Tutorial by Dev Ed - Youtube",
+          "url": "https://www.youtube.com/watch?v=Law7wfdg_ls"
+        }
+      ],
+      "fa": "react"
+    },
+    {
+      "subtopic": "Angular",
+      "links": [
+        {
+          "name": "Angular & Typescript for Beginners by Mosh Hamedani Youtube",
+          "url": "https://www.youtube.com/watch?v=k5E2AVpwsko"
+        },
+        {
+          "name": "Learn Angular - Full Tutorial Course by freecodecamp - Youtube",
+          "url": "https://www.youtube.com/watch?v=k5E2AVpwsko"
+        },
+        {
+          "name": "Angular Crash Course by Traversy Media - Youtube",
+          "url": "https://www.youtube.com/watch?v=Fdf5aTYRW0E"
+        }
+      ],
+      "fa": "angular"
+    },
+    {
+      "subtopic": "JavaScript",
+      "links": [
+        {
+          "name": "JavaScript Course - The Odin Project",
+          "url": "https://www.theodinproject.com/courses/javascript"
+        },
+        {
+          "name": "JavaScript Tutorial for Beginners by Mosh Hamedani - Youtube",
+          "url": "https://youtu.be/W6NZfCO5SIk"
+        },
+        {
+          "name": "JavaScript Tutorial for Beginners by Clever Programmer - Youtube",
+          "url": "https://www.youtube.com/watch?v=Qqx_wzMmFeA"
+        }
+      ],
+      "fa": "js"
+    }
+  ],
+  "mobile": [
+    {
+      "subtopic": "Android Development",
+      "links": [
+        {
+          "name": "React Native Tutorial for Beginners by Mosh Hamedani - Youtube",
+          "url": "https://www.youtube.com/watch?v=0-S5a0eXPoc&t=467s"
+        },
+        {
+          "name": "React Native Crash Course by Traversy Media - Youtube",
+          "url": "https://www.youtube.com/watch?v=Hf4MJH0jDb4"
+        },
+        {
+          "name": "Flutter Crash Course by Traversy Media - Youtube",
+          "url": "https://www.youtube.com/watch?v=1gDhl4leEzA"
+        }
+      ],
+      "fa": "android"
+    },
+    {
+      "subtopic": "iOS Development",
+      "links": [
+        {
+          "name": "Swift Tutorial - Full Course by freecodecamp - Youtube",
+          "url": "https://www.youtube.com/watch?v=comQ1-x2a1Q"
+        },
+        {
+          "name": "C# Tutorial - Full Course by freecodecamp - Youtube",
+          "url": "https://www.youtube.com/watch?v=comQ1-x2a1Q"
+        }
+      ],
+      "fa": "apple"
+    }
+  ],
+  "basics": [
+    {
+      "subtopic": "Version Control (Git)",
+      "links": [
+        {
+          "name": "Git & GitHub Crash Course by Traversy Media - Youtube",
+          "url": "https://www.youtube.com/watch?v=SWYqp7iY_Tc"
+        },
+        {
+          "name": "Git Basics - The Odin Project",
+          "url": "https://www.theodinproject.com/courses/web-development-101/lessons/introduction-to-git"
+        }
+      ],
+      "fa": "git"
+    },
+    {
+      "subtopic": "Linux",
+      "links": [
+        {
+          "name": "Coming Soon...",
+          "url": ""
+        }
+      ],
+      "fa": "linux"
+    }
+  ]
+}

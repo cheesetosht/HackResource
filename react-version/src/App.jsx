@@ -1,4 +1,5 @@
 import React from "react";
+import Tabs from "./components/Tabs";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
@@ -9,6 +10,7 @@ function App() {
     <>
       <Nav />
       <Hero />
+      <Tabs />
       <Footer />
     </>
   );
